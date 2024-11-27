@@ -1,4 +1,4 @@
-package ticket_booking_management;
+package tkt_booking_management;
 public class User {
     private String name;
     private String phno;
@@ -80,7 +80,7 @@ public class User {
     }
 
     public void setPhoneNumber(String phoneNumber) {
-        if (phoneNumber.matches("\\d{10}")) { // Validating a 10-digit phone number
+        if (phoneNumber.matches("\\d{10}")) { 
             this.phoneNumber = phoneNumber;
         } else {
             System.out.println("Invalid phone number format.");
@@ -125,7 +125,6 @@ public class User {
 
         for (User registeredUser : registeredUsers) {
             if (registeredUser.getUsername().equals(username)) {
-                // If username exists, validate password
                 if (registeredUser.getPassword().equals(password)) {
                     System.out.println("Login successful. Welcome, " + registeredUser.getName() + "!");
                     return;
@@ -136,7 +135,7 @@ public class User {
             }
         }
 
-        System.out.println("Username not found. Let's sign up!");
+        System.out.println("Username not found.  sign up!");
 
         System.out.print("Enter your name: ");
         String name = scanner.nextLine();
