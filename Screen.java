@@ -1,4 +1,4 @@
-package tkt_booking;
+package tkt_booking_management;
 
 public class Screen {
 	private int id;
